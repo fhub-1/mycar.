@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 
-import CarLogo from "../../../assets/images/logo1.png";
+import CarLogo from "../../../assets/images/car-logo.png";
 
 const LogoContainer = styled.div`
   ${tw`
@@ -18,12 +18,13 @@ const LogoText = styled.div`
   font-bold
   text-black
   m-1
+  cursor-pointer
  `}
 `;
 
 const Image = styled.div`
   width: auto;
-  ${tw`h-6 md:h-9`};
+  ${tw`h-6 md:h-9 cursor-pointer`};
    
    img {
        width: auto;
@@ -37,6 +38,6 @@ export function Logo() {
      <Image>
          <img src={CarLogo} alt="the logo"/>
      </Image>
-     <LogoText>Mycar.</LogoText>
+     <LogoText>RentCar.</LogoText>
  </LogoContainer>
 }
