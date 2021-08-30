@@ -4,10 +4,13 @@ import tw from "twin.macro";
 import { BookCard } from "../../components/bookCard";
 import { Marginer } from "../../components/marginer";
 import { Navbar } from "../../components/navbar";
+import { AboutUs } from "./AboutUs";
+import { BookingSteps } from "./bookingSteps";
+import { TopCars } from "./topcars";
 import { TopSection } from "./topSection";
 
 const PageContainer = styled.div`
-     ${tw`
+  ${tw`
        flex
        flex-col
        w-full
@@ -18,10 +21,18 @@ const PageContainer = styled.div`
 `;
 
 export function Homepage() {
-    return <PageContainer>
-      <Navbar/>
-      <TopSection/>
-      <Marginer direction="vertical" margin="4em"/>
-      <BookCard/>
+  return (
+    <PageContainer>
+      <Navbar />
+      <TopSection />
+      <Marginer direction="vertical" margin="4em" />
+      <BookCard />
+      <Marginer direction="vertical" margin="10em" />
+      <BookingSteps />
+      <Marginer direction="vertical" margin="5em" />
+      <AboutUs />
+      <Marginer direction="vertical" margin="8em" />
+      <TopCars />
     </PageContainer>
+  );
 }
