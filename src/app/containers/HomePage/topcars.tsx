@@ -87,6 +87,7 @@ export function TopCars() {
             <Car {...testCar} />,
           ]}
           plugins={[
+            "clickToChange",
             {
               resolve: slidesToShowPlugin,
               options: {
@@ -94,6 +95,28 @@ export function TopCars() {
               },
             },
           ]}
+          breakpoints={{
+            640: {
+              plugins: [
+                {
+                  resolve: slidesToShowPlugin,
+                  options: {
+                    numberOfSlides: 1,
+                  },
+                },
+              ],
+            },
+            900: {
+              plugins: [
+                {
+                  resolve: slidesToShowPlugin,
+                  options: {
+                    numberOfSlides: 2,
+                  },
+                },
+              ],
+            },
+          }}
         />
         <Dots value={current} onChange={setCurrent} number={2} />
       </CarsContainer>
