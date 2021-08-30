@@ -3,10 +3,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { Car } from "../../components/car";
 import { ICar } from "../../../typings/car";
-import Carousel, {
-  Dots,
-  slidesToShowPlugins,
-} from "@brainhubeu/react-carousel";
+import Carousel, { Dots, slidesToShowPlugin } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 
 const TopCarsContainer = styled.div`
@@ -90,7 +87,7 @@ export function TopCars() {
           ]}
           plugins={[
             {
-              resolve: slidesToShowPlugins,
+              resolve: slidesToShowPlugin,
               options: {
                 numberOfSlides: 3,
               },
