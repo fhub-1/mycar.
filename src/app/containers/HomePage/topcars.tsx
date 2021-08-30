@@ -84,6 +84,7 @@ export function TopCars() {
             <Car {...testCar} />,
             <Car {...testCar2} />,
             <Car {...testCar3} />,
+            <Car {...testCar} />,
           ]}
           plugins={[
             {
