@@ -15,6 +15,7 @@ const ListContainer = styled.ul`
 
 const NavItemsFixed = styled.div`
   ${tw` 
+  bg-white 
   fixed 
   inset-x-0 
   top-0 
