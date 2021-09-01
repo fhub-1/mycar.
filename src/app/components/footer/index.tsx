@@ -208,7 +208,7 @@ export function Footer() {
             <RedIcon>
               <FontAwesomeIcon icon={faPhoneAlt} />
             </RedIcon>
-            <SmallText>+91 555-234-8469</SmallText>
+            <SmallText>+254 795-164-401</SmallText>
           </HorizontalContainer>
         </SectionContainer>
         <SectionContainer>
@@ -217,7 +217,7 @@ export function Footer() {
             <RedIcon>
               <FontAwesomeIcon icon={faEnvelope} />
             </RedIcon>
-            <SmallText>info@Rent.com</SmallText>
+            <SmallText>info@RentCar.com</SmallText>
           </HorizontalContainer>
         </SectionContainer>
       </InnerContainer>
