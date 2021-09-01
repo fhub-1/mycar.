@@ -19,7 +19,7 @@ const NavItemsFixed = styled.div`
   p-2 mt-0 
   fixed 
   w-full 
-  z-10 
+  z-10
   pin-t
 `}
 `;
