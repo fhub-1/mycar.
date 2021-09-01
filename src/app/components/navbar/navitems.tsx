@@ -13,7 +13,17 @@ const ListContainer = styled.ul`
   `};
 `;
 
-const NavItem = styled.li<{ menu?: any}>`
+const NavItemsFixed = styled.div`
+  ${tw`
+  bg-gray-100 
+  fixed 
+  inset-x-0 
+  top-0 
+  h-16  
+`}
+`;
+
+const NavItem = styled.li<{ menu?: any }>`
   ${tw`
     text-sm
     md:text-base
@@ -28,7 +38,7 @@ const NavItem = styled.li<{ menu?: any}>`
     hover:text-gray-700
   `};
 
-   ${({ menu }) =>
+  ${({ menu }) =>
     menu &&
     css`
       ${tw`
@@ -64,19 +74,21 @@ export function NavItems() {
     );
 
   return (
-    <ListContainer>
-      <NavItem>
-        <a href="/">Home</a>
-      </NavItem>
-      <NavItem>
-        <a href="/">Cars</a>
-      </NavItem>
-      <NavItem>
-        <a href="/">Services</a>
-      </NavItem>
-      <NavItem>
-        <a href="/">Contact Us</a>
-      </NavItem>
-    </ListContainer>
+    <NavItemsFixed>
+      <ListContainer>
+        <NavItem>
+          <a href="/">Home</a>
+        </NavItem>
+        <NavItem>
+          <a href="/">Cars</a>
+        </NavItem>
+        <NavItem>
+          <a href="/">Services</a>
+        </NavItem>
+        <NavItem>
+          <a href="/">Contact Us</a>
+        </NavItem>
+      </ListContainer>
+    </NavItemsFixed>
   );
 }
