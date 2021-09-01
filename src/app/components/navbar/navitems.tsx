@@ -16,10 +16,11 @@ const ListContainer = styled.ul`
 const NavItemsFixed = styled.div`
   ${tw` 
   bg-white 
-  fixed 
+  stickey 
   inset-x-0 
   top-0 
   h-16  
+  z-0
 `}
 `;
 
