@@ -13,17 +13,6 @@ const ListContainer = styled.ul`
   `};
 `;
 
-const NavItemsFixed = styled.div`
-  ${tw` 
-  bg-grey-darkest 
-  p-2 mt-0 
-  fixed 
-  w-full 
-  z-10
-  pin-t
-`}
-`;
-
 const NavItem = styled.li<{ menu?: any }>`
   ${tw`
     text-sm
@@ -75,21 +64,19 @@ export function NavItems() {
     );
 
   return (
-    <NavItemsFixed>
-      <ListContainer>
-        <NavItem>
-          <a href="/">Home</a>
-        </NavItem>
-        <NavItem>
-          <a href="/">Cars</a>
-        </NavItem>
-        <NavItem>
-          <a href="/">Services</a>
-        </NavItem>
-        <NavItem>
-          <a href="/">Contact Us</a>
-        </NavItem>
-      </ListContainer>
-    </NavItemsFixed>
+    <ListContainer>
+      <NavItem>
+        <a href="/">Home</a>
+      </NavItem>
+      <NavItem>
+        <a href="/">Cars</a>
+      </NavItem>
+      <NavItem>
+        <a href="/">Services</a>
+      </NavItem>
+      <NavItem>
+        <a href="/">Contact Us</a>
+      </NavItem>
+    </ListContainer>
   );
 }

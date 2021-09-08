@@ -223,7 +223,7 @@ export function Footer() {
       </InnerContainer>
       <BottomContainer>
         <CopyrightText>
-          Copyright &copy; {new Date().getFullYear()} Yourcar. All rights
+          Copyright &copy; {new Date().getFullYear()} RentCar. A ll rights
           reserved.
         </CopyrightText>
       </BottomContainer>
